@@ -1,6 +1,8 @@
 """
 Tick Data Puller
 -----------------
+Built by Asiamah Koreh for Birim Capital.
+
 A simple local web app for pulling historical FX tick data (via the `duka`
 library / Dukascopy feed) for backtesting. Runs entirely on your machine —
 Flask just serves a page in your browser so you don't have to touch the
@@ -233,7 +235,7 @@ PAGE = """
 <html>
 <head>
 <meta charset="utf-8">
-<title>Tick Data Puller</title>
+<title>Tick Data Puller — Birim Capital</title>
 <style>
   :root {
     --bg: #0f1115; --panel: #171a21; --border: #262b36;
@@ -246,7 +248,8 @@ PAGE = """
     max-width: 720px; margin: 40px auto; padding: 0 20px;
   }
   h1 { font-size: 22px; margin-bottom: 4px; }
-  p.sub { color: var(--muted); margin-top: 0; margin-bottom: 28px; }
+  p.sub { color: var(--muted); margin-top: 0; margin-bottom: 4px; }
+  p.credit { color: var(--muted); font-size: 12.5px; margin-top: 0; margin-bottom: 28px; }
   .panel {
     background: var(--panel); border: 1px solid var(--border);
     border-radius: 10px; padding: 20px; margin-bottom: 20px;
@@ -282,6 +285,7 @@ PAGE = """
 <body>
   <h1>Tick Data Puller</h1>
   <p class="sub">Pull years of historical FX tick data for backtesting. Runs locally, saves to your tickdata folder.</p>
+  <p class="credit">Built by Asiamah Koreh for Birim Capital</p>
 
   <div class="panel">
     <label>Symbol</label>

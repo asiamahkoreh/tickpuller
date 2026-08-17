@@ -1,0 +1,12 @@
+# Downloaded tick data — never commit this, it's large and personal
+tickdata/
+test/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor/OS clutter
+.vscode/
+.DS_Store
+Thumbs.db
